@@ -1,0 +1,17 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+target/
+logs/
+dbt_packages/
+airflow/.env
+dbt_snowflake_airflow_project/dbt_packages/
+dbt_snowflake_airflow_project/target/
+dbt_snowflake_airflow_project/logs/
+
+# Virtual environments
+.venv
