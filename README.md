@@ -1,31 +1,31 @@
-### dbt + Snowflake + Airflow Data Pipeline
+# dbt + Snowflake + Airflow Data Pipeline
 ## Overview
 This project demonstrates how to build and orchestrate a modern analytics pipeline using dbt, Snowflake, and Apache Airflow.
 The pipeline transforms raw data from Snowflake source tables into analytics-ready models using dbt transformations, and orchestrates the workflow using Apache Airflow running on Docker.
 The project implements a layered transformation architecture with *staging, intermediate, and mart* models, along with data quality testing and pipeline orchestration.
 
 ## Data Model Layers
-# Staging Layer
+### Staging Layer
 Standardizes raw source tables.
 - stg_tpch_orders
 - stg_tpch_line_items
-# Intermediate Layer
+### Intermediate Layer
 Applies business transformations and joins.
 - int_order_items
 - int_order_items_summary
-# Mart Layer
+### Mart Layer
 Produces final analytics tables.
 - fct_orders
 
 ## Data Quality Testing
 The project uses dbt tests to ensure data reliability.
 Examples implemented:
-# Generic Tests
+### Generic Tests
 - not_null
 - unique
 - relationships
 - accepted_values
-# Custom Tests
+### Custom Tests
 - date validation
 - discount validation
 
